@@ -21,5 +21,7 @@ public:
 
 	Sprite getSprite( );
 
+	void indent( bool isPressed );
+
 	void update( float elapsedTime );
 };

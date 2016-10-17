@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "SFML\Graphics.hpp"
 #include "Chest.h"
+#include <thread>
+#include <chrono>
 
 using namespace sf;
 
@@ -28,5 +30,17 @@ Sprite Chest::getSprite( ) {
 
 void Chest::update( float dtAsSeconds ) {
 	chestSprite.setPosition( position );
+
+}
+
+void Chest::indent( bool isPressed ) {
+	if (isPressed) {
+		chestSprite.setScale( 7.5, 7.5 );
+	}
+	else if (!isPressed) {
+		chestSprite.setScale( 8, 8 );
+	}
+
+	
 
 }
