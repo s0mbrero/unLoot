@@ -14,10 +14,10 @@ Engine::Engine() {
 }
 
 void Engine::start( ) {
-	font.loadFromFile( "assets/Breathe Fire.otf" );
+	font.loadFromFile( "assets/manaspc.ttf" );
 	text.setFont( font );
 	text.setStyle( Text::Bold );
-	text.setPosition( 290.0f, 50.0f );
+	text.setPosition( 260.0f, 50.0f );
 	text.setCharacterSize( 32 );
 	text.setFillColor( Color::Black );
 
