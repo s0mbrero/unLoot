@@ -3,4 +3,8 @@
 
 void Engine::input() {
 
+	if ( Keyboard::isKeyPressed( Keyboard::Escape ) ) {
+		m_window.close( );
+	}
+
 }
