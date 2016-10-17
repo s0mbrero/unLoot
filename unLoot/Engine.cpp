@@ -24,3 +24,7 @@ void Engine::start( ) {
 		draw( );
 	}
 }
+
+void Engine::incrementCounter( ) {
+	counter++;
+}

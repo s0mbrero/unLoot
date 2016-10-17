@@ -9,7 +9,6 @@ private:
 	Sprite chestSprite;
 	Texture chestTexture;
 
-
 	Vector2f position;
 
 

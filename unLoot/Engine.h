@@ -11,6 +11,8 @@ private:
 
 	Chest chest;
 
+	int counter;
+
 	void input( );
 	void update( float dtAsSeconds );
 	void draw( );
@@ -21,5 +23,9 @@ public:
 	Engine();
 
 	void start( );
+
+	void incrementCounter( );
+
+
 
 };
