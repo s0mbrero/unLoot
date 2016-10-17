@@ -7,5 +7,9 @@ void Engine::input() {
 		m_window.close( );
 	}
 
+	if ( Mouse::isButtonPressed( Mouse::Left ) ) {
+		counter++;
+	}
+
 
 }
