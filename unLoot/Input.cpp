@@ -7,6 +7,10 @@ void Engine::input() {
 		m_window.close( );
 	}
 
+	if ( Mouse::isButtonPressed( Mouse::Left ) ) {
+		counter++;
+	}
+
 
 	sf::Event event;
 	while (m_window.pollEvent( event ))
