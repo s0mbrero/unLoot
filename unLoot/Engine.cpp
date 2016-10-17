@@ -18,7 +18,7 @@ void Engine::start( ) {
 
 	Clock clock;
 
-	cursorTexture.loadFromFile( "assets/cursor.png" );
+	cursorTexture.loadFromFile( "assets/regCursor.png" );
 	cursorSprite.setTexture( cursorTexture );
 
 	while ( m_window.isOpen( ) ) {
