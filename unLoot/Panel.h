@@ -1,13 +1,20 @@
 #pragma once
 #include <SFML\Graphics.hpp>
-#include "Engine.h"
+
+using namespace sf;
 
 class Panel {
 private:
 
+	RectangleShape panelShape;
 
+	Vector2f size;
+	float height;
+	float width;
 
 public:
-	Panel( float x1, float y1, float x2, float y2 );
+	Panel();
+
+	RectangleShape getShape( );
 
 };

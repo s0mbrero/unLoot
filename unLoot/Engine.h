@@ -2,6 +2,7 @@
 #include <SFML\Graphics.hpp>
 #include "Chest.h"
 #include "Counter.h"
+#include "Panel.h"
 
 using namespace sf;
 
@@ -12,6 +13,7 @@ private:
 
 	Chest chest;
 	Counter clickCounter;
+	Panel infoPanel;
 
 	Texture cursorTexture;
 	Sprite cursorSprite;
