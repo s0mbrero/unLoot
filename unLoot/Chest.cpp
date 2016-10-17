@@ -12,6 +12,13 @@ Chest::Chest( ) {
 	chestSprite.setTexture( chestTexture );
 	chestSprite.setOrigin( 8, 8 );
 	chestSprite.setScale( 8.0f, 8.0f );
+
+	sizeChest.x = 128;
+	sizeChest.y = 128;
+
+	chestHitbox.setSize( sizeChest );
+	chestHitbox.setOrigin( 64, 64 );
+	chestHitbox.setPosition( position );
 	
 }
 
