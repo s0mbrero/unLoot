@@ -13,7 +13,7 @@ private:
 
 	Chest chest;
 	Counter clickCounter;
-	Panel panel;
+	Panel infoPanel;
 
 	Texture cursorTexture;
 	Sprite cursorSprite;
