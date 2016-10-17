@@ -8,8 +8,12 @@ Engine::Engine() {
 
 	counter = 0;
 
-	m_window.create( VideoMode( resolution.x, resolution.y ), "unLoot" );
+	m_window.create( VideoMode( resolution.x, resolution.y ),
+		"unLoot",
+		Style::Close
+		);
 	m_window.setFramerateLimit( 60 );
+	
 
 }
 
