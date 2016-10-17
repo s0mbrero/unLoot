@@ -10,8 +10,6 @@ Counter::Counter( ) {
 	text.setCharacterSize( 32 );
 	text.setFillColor( Color::Black );
 
-	
-
 	counter = 0;
 }
 

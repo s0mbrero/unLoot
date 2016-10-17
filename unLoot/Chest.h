@@ -17,11 +17,13 @@ private:
 public:
 	Chest( );
 
-	FloatRect getPosition( );
+	FloatRect getGlobalBounds();
 
 	Sprite getSprite( );
 
 	void indent( bool isPressed );
 
 	void update( float elapsedTime );
+
+	
 };

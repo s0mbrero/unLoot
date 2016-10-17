@@ -8,7 +8,7 @@ using namespace sf;
 
 Chest::Chest( ) {
 	position.x = 300;
-	position.y = 300;
+	position.y = 250;
 
 	chestTexture.loadFromFile( "assets/simpleChest.png" );
 	chestSprite.setTexture( chestTexture );
@@ -40,7 +40,8 @@ void Chest::indent( bool isPressed ) {
 	else if (!isPressed) {
 		chestSprite.setScale( 8, 8 );
 	}
+}
 
-	
-
+FloatRect Chest::getGlobalBounds( ) {
+	return chestHitbox.getGlobalBounds( );
 }
