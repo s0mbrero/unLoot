@@ -20,6 +20,8 @@ void Engine::start( ) {
 
 	cursorTexture.loadFromFile( "assets/cursor.png" );
 	cursorSprite.setTexture( cursorTexture );
+	cursorSprite.setScale( 1.2, 1.2 );
+	
 
 	while ( m_window.isOpen( ) ) {
 
