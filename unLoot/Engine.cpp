@@ -18,9 +18,9 @@ void Engine::start( ) {
 
 	Clock clock;
 
-	cursorTexture.loadFromFile( "assets/cursor.png" );
+	cursorTexture.loadFromFile( "assets/regCursor.png" );
 	cursorSprite.setTexture( cursorTexture );
-	cursorSprite.setScale( 1.2, 1.2 );
+	cursorSprite.setScale( 4, 4 );
 	
 
 	while ( m_window.isOpen( ) ) {
