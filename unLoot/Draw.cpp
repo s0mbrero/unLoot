@@ -14,8 +14,10 @@ void Engine::draw() {
 	Text text = clickCounter.getText( );
 	m_window.draw( chest.getSprite( ) );
 	m_window.draw( text );
-	m_window.draw( cursorSprite );
+	
 	m_window.setMouseCursorVisible( false );
+	m_window.draw( infoPanel.getShape( ) );
+	m_window.draw( cursorSprite );
 
 	m_window.display( );
 

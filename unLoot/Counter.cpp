@@ -6,7 +6,7 @@ Counter::Counter( ) {
 	font.loadFromFile( "assets/manaspc.ttf" );
 	text.setFont( font );
 	text.setStyle( Text::Bold );
-	text.setPosition( 400.0f, 50.0f );
+	text.setPosition( 300, 50 );
 	text.setCharacterSize( 32 );
 	text.setFillColor( Color::Black );
 

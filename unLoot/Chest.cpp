@@ -7,7 +7,7 @@
 using namespace sf;
 
 Chest::Chest( ) {
-	position.x = 400;
+	position.x = 300;
 	position.y = 300;
 
 	chestTexture.loadFromFile( "assets/simpleChest.png" );

@@ -4,8 +4,8 @@
 
 Engine::Engine() {
 	Vector2f resolution;
-	resolution.x = 800;
-	resolution.y = 600;
+	resolution.x = 900;
+	resolution.y = 500;
 
 	m_window.create(
 		VideoMode( resolution.x, resolution.y ),
