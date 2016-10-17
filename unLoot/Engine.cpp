@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Engine.h"
+#include <Windows.h>
 
 Engine::Engine() {
 	Vector2f resolution;
@@ -10,15 +11,15 @@ Engine::Engine() {
 		VideoMode( resolution.x, resolution.y ),
 		"unLoot"
 		);
-	m_window.setFramerateLimit( 60 );
-	
-
+	m_window.setFramerateLimit( 144 );
 }
 
 void Engine::start( ) {
-	
 
 	Clock clock;
+
+	cursorTexture.loadFromFile( "assets/cursor.png" );
+	cursorSprite.setTexture( cursorTexture );
 
 	while ( m_window.isOpen( ) ) {
 

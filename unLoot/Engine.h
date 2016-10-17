@@ -13,6 +13,9 @@ private:
 	Chest chest;
 	Counter clickCounter;
 
+	Texture cursorTexture;
+	Sprite cursorSprite;
+
 	void input( );
 	void update( float dtAsSeconds );
 	void draw( );

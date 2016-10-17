@@ -8,12 +8,13 @@ using namespace sf;
 void Engine::draw() {
 	m_window.clear( Color::White );
 
-	m_window.draw( chest.getSprite( ) );
-	
-	Text text = clickCounter.getText( );
+	cursorSprite.setPosition( static_cast<sf::Vector2f>(sf::Mouse::getPosition( m_window )) );
 
-	
+	Text text = clickCounter.getText( );
+	m_window.draw( chest.getSprite( ) );
 	m_window.draw( text );
+	m_window.draw( cursorSprite );
+	m_window.setMouseCursorVisible( false );
 
 	m_window.display( );
 

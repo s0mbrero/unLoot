@@ -9,6 +9,8 @@ private:
 	Font font;
 	Text text;
 
+	FloatRect bounds;
+
 	int counter;
 
 public:

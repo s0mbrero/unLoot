@@ -15,8 +15,11 @@ void Engine::input() {
 		if (event.type == sf::Event::Closed) {
 			m_window.close( );
 		} else if ( event.type == event.MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left ) {
+			chest.indent( true );
 			clickCounter.increment( );
-
+		}
+		else if (event.type == event.MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
+			chest.indent( false );
 		}
 
 		
