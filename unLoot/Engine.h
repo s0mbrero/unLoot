@@ -11,6 +11,9 @@ private:
 
 	Chest chest;
 
+	Font font;
+	Text text;
+
 	int counter;
 
 	void input( );
@@ -23,8 +26,6 @@ public:
 	Engine();
 
 	void start( );
-
-	void incrementCounter( );
 
 
 

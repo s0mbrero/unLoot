@@ -6,12 +6,21 @@ Engine::Engine() {
 	resolution.x = 800;
 	resolution.y = 600;
 
+	counter = 0;
+
 	m_window.create( VideoMode( resolution.x, resolution.y ), "unLoot" );
 	m_window.setFramerateLimit( 60 );
 
 }
 
 void Engine::start( ) {
+	font.loadFromFile( "assets/Breathe Fire.otf" );
+	text.setFont( font );
+	text.setStyle( Text::Bold );
+	text.setPosition( 290.0f, 50.0f );
+	text.setCharacterSize( 32 );
+	text.setFillColor( Color::Black );
+
 	Clock clock;
 
 	while ( m_window.isOpen( ) ) {
@@ -23,8 +32,4 @@ void Engine::start( ) {
 		update( dtAsSeconds );
 		draw( );
 	}
-}
-
-void Engine::incrementCounter( ) {
-	counter++;
 }
