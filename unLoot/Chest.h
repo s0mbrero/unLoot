@@ -9,10 +9,10 @@ private:
 	Sprite chestSprite;
 	Texture chestTexture;
 
-
 	Vector2f position;
+	Vector2f sizeChest;
 
-
+	RectangleShape chestHitbox;
 
 public:
 	Chest( );
