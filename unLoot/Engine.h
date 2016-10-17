@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML\Graphics.hpp>
 #include "Chest.h"
+#include "Counter.h"
 
 using namespace sf;
 
@@ -10,11 +11,7 @@ private:
 	RenderWindow m_window;
 
 	Chest chest;
-
-	Font font;
-	Text text;
-
-	int counter;
+	Counter clickCounter;
 
 	void input( );
 	void update( float dtAsSeconds );

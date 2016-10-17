@@ -6,11 +6,9 @@ Engine::Engine() {
 	resolution.x = 800;
 	resolution.y = 600;
 
-	counter = 0;
-
-	m_window.create( VideoMode( resolution.x, resolution.y ),
-		"unLoot",
-		Style::Close
+	m_window.create(
+		VideoMode( resolution.x, resolution.y ),
+		"unLoot"
 		);
 	m_window.setFramerateLimit( 60 );
 	
@@ -18,12 +16,7 @@ Engine::Engine() {
 }
 
 void Engine::start( ) {
-	font.loadFromFile( "assets/manaspc.ttf" );
-	text.setFont( font );
-	text.setStyle( Text::Bold );
-	text.setPosition( 260.0f, 50.0f );
-	text.setCharacterSize( 32 );
-	text.setFillColor( Color::Black );
+	
 
 	Clock clock;
 
