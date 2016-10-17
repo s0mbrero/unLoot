@@ -8,6 +8,8 @@ void Engine::input() {
 		m_window.close( );
 	}
 
+	Vector2i mousePos = Mouse::getPosition(m_window);
+
 	sf::Event event;
 	while (m_window.pollEvent( event ))
 	{
@@ -15,8 +17,13 @@ void Engine::input() {
 		if (event.type == sf::Event::Closed) {
 			m_window.close( );
 		} else if ( event.type == event.MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left ) {
-			chest.indent( true );
-			clickCounter.increment( );
+
+			if ((mousePos.x > 236 && mousePos.x < 364) && ( mousePos.y > 186 && mousePos.y < 314 )) {
+				chest.indent( true );
+				clickCounter.increment( );
+			
+			}
+			
 		}
 		else if (event.type == event.MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
 			chest.indent( false );
