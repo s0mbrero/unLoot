@@ -20,6 +20,7 @@ void Engine::start( ) {
 
 	cursorTexture.loadFromFile( "assets/regCursor.png" );
 	cursorSprite.setTexture( cursorTexture );
+	cursorSprite.setScale( 4, 4 );
 
 	while ( m_window.isOpen( ) ) {
 
