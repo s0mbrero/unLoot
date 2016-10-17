@@ -15,7 +15,8 @@ void Engine::input() {
 		if (event.type == sf::Event::Closed) {
 			m_window.close( );
 		} else if ( event.type == event.MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left ) {
-			counter.increment;
+			clickCounter.increment( );
+
 		}
 
 		
