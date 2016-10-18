@@ -18,6 +18,11 @@ private:
 	Texture cursorTexture;
 	Sprite cursorSprite;
 
+	Texture backgroundTexture;
+	Sprite background1;
+	Sprite background2;
+	Sprite background3;
+
 	void input( );
 	void update( float dtAsSeconds );
 	void draw( );

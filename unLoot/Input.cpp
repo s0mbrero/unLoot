@@ -21,7 +21,6 @@ void Engine::input() {
 			if ((mousePos.x > 236 && mousePos.x < 364) && ( mousePos.y > 186 && mousePos.y < 314 )) {
 				chest.indent( true );
 				clickCounter.increment( );
-			
 			}
 			
 		}
