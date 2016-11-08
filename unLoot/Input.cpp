@@ -4,32 +4,36 @@
 
 void Engine::input() {
 
+	// Close window if escape key is pressed
 	if ( Keyboard::isKeyPressed( Keyboard::Escape ) ) {
 		m_window.close( );
 	}
 
+	// Store mouse coordinates
 	Vector2i mousePos = Mouse::getPosition(m_window);
 
-	sf::Event event;
+	Event event;
 	while (m_window.pollEvent( event ))
 	{
-		
-		if (event.type == sf::Event::Closed) {
+		// Close window when close button is pressed
+		if (event.type == Event::Closed) {
 			m_window.close( );
-		} else if ( event.type == event.MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left ) {
+		}
+		
+		// Event handler for mouse pressed down
+		if ( event.type == event.MouseButtonPressed && event.mouseButton.button == Mouse::Left ) {
 
-			if ((mousePos.x > 236 && mousePos.x < 364) && ( mousePos.y > 186 && mousePos.y < 314 )) {
+			// If mouse is hovering over chest hitbox when pressed, indent chest sprite
+			if (IntRect(chest.chestHitbox.getGlobalBounds( )).contains( mousePos )) {
 				chest.indent( true );
 				clickCounter.increment( );
 			}
+			// Event handler for mouse released
+		} else if (event.type == event.MouseButtonReleased && event.mouseButton.button == Mouse::Left) {
 			
-		}
-		else if (event.type == event.MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
+			// If chest is indented, reset chest sprite
 			chest.indent( false );
 		}
+	} // End while loop
 
-		
-			
-	}
-
-}
+} // End Engine::input()

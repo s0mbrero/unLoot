@@ -9,15 +9,19 @@ private:
 	Sprite chestSprite;
 	Texture chestTexture;
 
-	Vector2f position;
-	Vector2f sizeChest;
+	Texture shadowTexture;
+	Sprite shadowSprite;
 
-	RectangleShape chestHitbox;
+	Vector2f chestPosition;
+	Vector2f sizeChestHitbox;
+	Vector2f shadowPosition;
+
+	
 
 public:
 	Chest( );
 
-	FloatRect getGlobalBounds();
+	RectangleShape chestHitbox;
 
 	Sprite getSprite( );
 

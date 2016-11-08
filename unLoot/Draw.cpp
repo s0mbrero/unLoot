@@ -10,9 +10,10 @@ void Engine::draw() {
 
 	cursorSprite.setPosition( static_cast<sf::Vector2f>(sf::Mouse::getPosition( m_window )) );
 
+	m_window.draw( background );
+	m_window.draw( chest.getSprite( ) );
 
 	Text text = clickCounter.getText( );
-	m_window.draw( chest.getSprite( ) );
 	m_window.draw( text );
 	
 	m_window.setMouseCursorVisible( false );
